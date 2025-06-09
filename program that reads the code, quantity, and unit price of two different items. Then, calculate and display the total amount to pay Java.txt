@@ -1,0 +1,26 @@
+import java.util.Scanner;
+import java.util.Locale;
+public class Main {
+    public static void main(String[] args) {
+  Locale.setDefault(Locale.UK);
+  Scanner sc = new Scanner(System.in);
+//in
+int codP1 = sc.nextInt();
+int quantP1 = sc.nextInt();
+double valorUni1 = sc.nextDouble();
+int codP2 = sc.nextInt();
+int quantP2 = sc.nextInt();
+double valorUni2 = sc.nextDouble();
+
+//calculation
+double quant1= quantP1*valorUni1;
+double quant2= quantP2*valorUni2;
+double cal = quant1 + quant2;
+//out
+System.out.printf("Total amount to pay: %.2f£",cal);
+
+
+
+  sc.close();
+    }
+}
