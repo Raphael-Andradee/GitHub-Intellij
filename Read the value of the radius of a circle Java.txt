@@ -1,0 +1,22 @@
+import java.util.Scanner;
+import java.util.Locale;
+public class Main {
+    public static void main(String[] args) {
+  Locale.setDefault(Locale.UK); 
+  Scanner sc = new Scanner(System.in);
+
+  double pi = 3.14159;
+
+
+  double Rai = sc.nextDouble();
+  double Cal = Math.pow(Rai, 2.0);
+  double Area = pi * Cal;
+
+  System.out.printf("Area = %.4f%n",Area);
+
+
+
+
+  sc.close();
+    }
+}
