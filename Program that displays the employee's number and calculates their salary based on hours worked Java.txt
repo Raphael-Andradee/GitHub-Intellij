@@ -1,0 +1,23 @@
+import java.util.Scanner;
+import java.util.Locale;
+public class Main {
+    public static void main(String[] args) {
+  Locale.setDefault(Locale.UK);
+  Scanner sc = new Scanner(System.in);
+
+// Programa lÊ: Numero de funcionario + horas trabalhadas + valor recebido por horas.
+// Programa mostra: Numero de funcionario + salario com 2 casas decimais.
+
+int numeroFun = sc.nextInt();
+int horasTrab = sc.nextInt();
+double valorRecHoras = sc.nextDouble();
+
+double sal =  horasTrab * valorRecHoras; // calculation
+
+System.out.printf("Number = %d%nSalary = %.2f£",numeroFun,sal);
+
+
+
+  sc.close();
+    }
+}
