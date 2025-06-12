@@ -1,0 +1,21 @@
+import java.util.Scanner;
+import java.util.Locale;
+
+public class Main {
+    public static void main(String[] args) {
+        Locale.setDefault(Locale.UK);
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Indique o 1º numero: ");
+        int primero = sc.nextInt();
+        System.out.println("Indique o 2º numero: ");
+        int segundo = sc.nextInt();
+
+       if(primero % segundo == 0 || segundo % primero == 0){
+           System.out.println("São Multiplos ");
+       }
+
+         else{System.out.println("Não são Multiplos");}
+
+        sc.close();
+    }
+}
