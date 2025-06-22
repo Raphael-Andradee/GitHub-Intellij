@@ -1,0 +1,26 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Locale.setDefault(Locale.UK);
+        Scanner sc = new Scanner(System.in);
+
+
+
+
+      int tamanho = sc.nextInt();
+
+      for (int i=0;i<tamanho;i++){
+          double nota1 = sc.nextDouble();
+          double nota2 = sc.nextDouble();
+          double nota3 = sc.nextDouble();
+
+          double ponderada = (nota1*2.0+nota2*3.0+nota3*5.0)/10.0;
+          System.out.printf("%.1f%n",ponderada);
+
+      }
+
+        sc.close();
+    }
+}
